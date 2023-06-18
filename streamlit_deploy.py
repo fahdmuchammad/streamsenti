@@ -1,10 +1,13 @@
 import streamlit as st
 # pip install micropip
-import subprocess
+import micropip
+async def install_packages():
+    await micropip.install('scikit-learn')
+    await micropip.install('sastrawi')
+    await micropip.install('nltk')
 
-# Install required packages
-subprocess.call(['pip', 'install', 'scikit-learn', 'sastrawi', 'nltk', 'sklearn'])
-
+# Call the async function to install the packages
+# await install_packages()
 import re
 import sklearn
 import string
@@ -103,4 +106,3 @@ if st.button("Predict"):
             st.write(df)
     else:
         st.write("Please input text.")
-
