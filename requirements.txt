@@ -1,0 +1,4 @@
+micropip
+scikit-learn
+sastrawi
+nltk
