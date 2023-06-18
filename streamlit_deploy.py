@@ -5,9 +5,9 @@ async def install_packages():
     await micropip.install('scikit-learn')
     await micropip.install('sastrawi')
     await micropip.install('nltk')
-    await install_packages()
+   
 # Call the async function to install the packages
-
+install_packages()
 import re
 import sklearn
 import string
