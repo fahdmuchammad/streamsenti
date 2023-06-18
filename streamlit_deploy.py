@@ -6,7 +6,7 @@ import subprocess
 subprocess.call(['pip', 'install', 'scikit-learn', 'sastrawi', 'nltk', 'sklearn'])
 
 import re
-import scikit-learn
+# import scikit-learn
 import string
 import pickle
 import pandas as pd
