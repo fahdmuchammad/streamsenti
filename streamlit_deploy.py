@@ -6,12 +6,12 @@ import subprocess
 subprocess.call(['pip', 'install', 'scikit-learn', 'sastrawi', 'nltk', 'sklearn'])
 
 import re
-# import scikit-learn
+import sklearn
 import string
 import pickle
 import pandas as pd
-# from sklearn.naive_bayes import MultinomialNB
-# from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory #stopword remover
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory #stemming
 
