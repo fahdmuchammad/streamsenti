@@ -1,5 +1,5 @@
 import streamlit as st
-import micropip
+# import micropip
 
 # async def install_packages():
 #     await micropip.install('scikit-learn')
