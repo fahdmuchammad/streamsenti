@@ -3,7 +3,7 @@ import streamlit as st
 import subprocess
 
 # Install required packages
-subprocess.call(['pip', 'install', 'scikit-learn', 'sastrawi', 'nltk'])
+subprocess.call(['pip', 'install', 'scikit-learn', 'sastrawi', 'nltk', 'sklearn'])
 
 import re
 import sklearn
