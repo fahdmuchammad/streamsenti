@@ -1,5 +1,5 @@
 import streamlit as st
-pip install micropip
+# pip install micropip
 import micropip
 
 async def install_packages():
