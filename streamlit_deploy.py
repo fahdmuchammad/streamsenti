@@ -1,14 +1,10 @@
 import streamlit as st
 # pip install micropip
-import micropip
+import subprocess
 
-async def install_packages():
-    await micropip.install('scikit-learn')
-    await micropip.install('sastrawi')
-    await micropip.install('nltk')
-   
-# Call the async function to install the packages
-install_packages()
+# Install required packages
+subprocess.call(['pip', 'install', 'scikit-learn', 'sastrawi', 'nltk'])
+
 import re
 import sklearn
 import string
