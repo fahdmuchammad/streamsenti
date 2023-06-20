@@ -102,7 +102,7 @@ if st.button("Predict"):
             st.write("Sentiment:", "<span style='color:red;'>Negative 😭</span>", unsafe_allow_html=True)
             st.write(df)
         else:
-            st.write("Sentiment:", "<span style='color:white;'>Neutral 😅</span>", unsafe_allow_html=True)
+            st.write("Sentiment:", "<span style='color:yellow;'>Neutral 😅</span>", unsafe_allow_html=True)
             st.write(df)
     else:
         st.write("Please input text.")
