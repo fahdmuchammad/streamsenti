@@ -67,7 +67,7 @@ def stemming(text):
 # Stopword
 def stopword(text):
         # Melakukan penghapusan stopwords pada setiap teks dalam batch
-    stopwords = ['yg', 'dgn', 'kl', 'spt', 'pk', 'tp', 'krn', 'dr', 'utk', 'lg', 'gw', 'si', 'jg', 'jd', 'shg', 'sbg','gak','gk','g']
+    stopwords = ['yg', 'dgn', 'kl', 'spt', 'pk', 'tp', 'krn', 'dr', 'utk', 'lg', 'gw', 'si', 'jg', 'jd', 'shg', 'sbg']
     stopwords = set(stopwords)
     words = text.split()
     cleaned_words = [word for word in words if word.lower() not in stopwords]        
