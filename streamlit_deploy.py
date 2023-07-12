@@ -71,8 +71,6 @@ def stopword(text):
     stopwords = set(stopwords)
     words = text.split()
     cleaned_words = [word for word in words if word.lower() not in stopwords]     
-    words = cleaned_words.split()
-    cleaned_words = [word for word in words if word.lower() not in stopword_remover]        
     cleaned_text = ' '.join(cleaned_words)
     return cleaned_text 
     
