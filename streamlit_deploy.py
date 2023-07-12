@@ -70,7 +70,9 @@ def stopword(text):
     stopwords = ['yg', 'dgn', 'kl', 'spt', 'pk', 'tp', 'krn', 'dr', 'utk', 'lg', 'gw', 'si', 'jg', 'jd', 'shg', 'sbg']
     stopwords = set(stopwords)
     words = text.split()
-    cleaned_words = [word for word in words if word.lower() not in stopwords]        
+    cleaned_words = [word for word in words if word.lower() not in stopwords]     
+    words = cleaned_words.split()
+    cleaned_words = [word for word in words if word.lower() not in stopword_remover]        
     cleaned_text = ' '.join(cleaned_words)
     return cleaned_text 
     
