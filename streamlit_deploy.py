@@ -1,12 +1,12 @@
 import streamlit as st
-# pip install micropip
 # import micropip
+
 # async def install_packages():
 #     await micropip.install('scikit-learn')
 #     await micropip.install('sastrawi')
 #     await micropip.install('nltk')
 
-# Call the async function to install the packages
+# # Call the async function to install the packages
 # await install_packages()
 import re
 import sklearn
@@ -70,8 +70,8 @@ def stopword(text):
     stopwords = ['yg', 'dgn', 'kl', 'spt', 'pk', 'tp', 'krn', 'dr', 'utk', 'lg', 'gw', 'si', 'jg', 'jd', 'shg', 'sbg']
     stopwords = set(stopwords)
     words = text.split()
-    cleaned_words = [word for word in words if word.lower() not in stopwords]
-    cleaned_text = ''.join(cleaned_words)
+    cleaned_words = [word for word in words if word.lower() not in stopwords]        
+    cleaned_text = ' '.join(cleaned_words)
     return cleaned_text 
     
 def predict_sentiment(text):
@@ -102,7 +102,8 @@ if st.button("Predict"):
             st.write("Sentiment:", "<span style='color:red;'>Negative 😭</span>", unsafe_allow_html=True)
             st.write(df)
         else:
-            st.write("Sentiment:", "<span style='color:yellow;'>Neutral 😅</span>", unsafe_allow_html=True)
+            st.write("Sentiment:", "<span style='color:white;'>Neutral 😅</span>", unsafe_allow_html=True)
             st.write(df)
     else:
         st.write("Please input text.")
+
